@@ -1,4 +1,3 @@
-
 //  GameViewController.swift
 //  MAPD724-W2020-midterm
 //Harmandeep kaur on 2020-02-19.

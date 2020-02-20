@@ -5,7 +5,7 @@ class Plane: GameObject
     // constructor
     init()
     {
-        super.init(imageString: "plane", initialScale: 2.0)
+        super.init(imageString: "plane", initialScale: 1.5)
         Start()
     }
     
@@ -37,6 +37,7 @@ class Plane: GameObject
     {
         self.zPosition = 2
         
+
     }
     
     override func Update()

@@ -29,12 +29,13 @@ class StartScene: SKScene {
         self.name = "START"
         
         // add ocean
-        self.oceanSprite1 = Ocean()
-        self.oceanSprite1?.position = CGPoint(x: 0, y: 1864.67)
-        self.addChild(oceanSprite1!)
+//        self.oceanSprite1 = Ocean()
+//        self.oceanSprite1?.position = CGPoint(x: 0, y: 1864.67)
+//        self.addChild(oceanSprite1!)
         
         self.oceanSprite2 = Ocean()
         self.oceanSprite2?.position = CGPoint(x: 0, y: 177)
+        self.oceanSprite2?.size = CGSize(width: 3000, height: 3000)
         self.addChild(oceanSprite2!)
         
     }
@@ -88,7 +89,7 @@ class StartScene: SKScene {
     
     override func update(_ currentTime: TimeInterval)
     {
-        self.oceanSprite1?.Update()
+//        self.oceanSprite1?.Update()
         self.oceanSprite2?.Update()
     
     }
