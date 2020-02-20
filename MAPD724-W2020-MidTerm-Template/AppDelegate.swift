@@ -1,10 +1,8 @@
 //
 //  AppDelegate.swift
-//  MAPD724-W2020-Lesson2
-//
-//  Created by Tom Tsiliopoulos on 2020-01-15.
-//  Copyright © 2020 CentennialCollege. All rights reserved.
-//
+//  MAPD724-W2020-midterm
+//Harmandeep kaur on 2020-02-19.
+//301092579
 
 import UIKit
 

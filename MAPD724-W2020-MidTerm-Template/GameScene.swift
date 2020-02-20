@@ -1,4 +1,7 @@
-
+//  MAPD724-W2020-midterm
+//Harmandeep kaur on 2020-02-19.
+//301092579
+//GameScene.swift
 import UIKit
 import AVFoundation
 import SpriteKit
@@ -42,7 +45,7 @@ class GameScene: SKScene {
         
         // add plane
         self.planeSprite = Plane()
-        self.planeSprite?.position = CGPoint(x: 0, y: -575)
+        self.planeSprite?.position = CGPoint(x: -300, y: -100)
         self.addChild(planeSprite!)
         
         // add island
@@ -78,17 +81,17 @@ class GameScene: SKScene {
     
     func touchDown(atPoint pos : CGPoint)
     {
-        self.planeSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: -575))
+        self.planeSprite?.TouchMove(newPos: CGPoint(x: -300, y: pos.y))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        self.planeSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: -575))
+        self.planeSprite?.TouchMove(newPos: CGPoint(x: -300, y: pos.y))
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        self.planeSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: -575))
+        self.planeSprite?.TouchMove(newPos: CGPoint(x: -300, y: pos.y))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)

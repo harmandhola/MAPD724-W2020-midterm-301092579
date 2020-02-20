@@ -1,4 +1,7 @@
-
+//  MAPD724-W2020-midterm
+//Harmandeep kaur on 2020-02-19.
+//301092579
+//StartScene.Swift
 import UIKit
 import AVFoundation
 import SpriteKit
