@@ -21,7 +21,7 @@ class Cloud: GameObject
     override func CheckBounds()
     {
         // bottom boundary
-        if(self.position.y < -801)
+        if(self.position.x < -801)
         {
             self.Reset()
         }
@@ -30,15 +30,15 @@ class Cloud: GameObject
     
     func Move()
     {
-        self.position.y -= self.dy!
-        self.position.x -= self.dx!
+        self.position.x -= self.dy!
+        self.position.y -= self.dx!
     }
     
     override func Reset()
     {
-        self.position.y = 801
+        self.position.x = 801
         let randomX:Int = (randomSource?.nextInt(upperBound: 614))! - 307
-        self.position.x = CGFloat(randomX)
+        self.position.y = CGFloat(randomX)
         self.dy = CGFloat((randomSource?.nextUniform())! * 5.0) + 5.0
         self.dx = CGFloat((randomSource?.nextUniform())! * -4.0) + 2.0
         self.isColliding = false
